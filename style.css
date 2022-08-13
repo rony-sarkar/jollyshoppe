@@ -31,6 +31,7 @@ a {
 
 .main-div {
     overflow: hidden;
+    background-color: #F6F6F6;
 }
 
 img {
@@ -39,7 +40,15 @@ img {
 }
 
 .banner-area img {
-    width: 90%;
+    margin: 10px 0;
+}
+
+.pro-single-img h3 {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /*  ================================
@@ -58,7 +67,7 @@ img {
 
 .support-box ul li {
     float: left;
-    width: 25%;
+    width: 20%;
     list-style: none;
     position: relative;
     padding: 10px 0;
@@ -70,7 +79,7 @@ img {
 }
 
 .service-left {
-    width: 20%;
+    width: 25%;
     float: left;
     text-align: center;
 }
@@ -85,22 +94,27 @@ img {
 }
 
 .service-right {
-    width: 80%;
+    width: 75%;
     float: right;
     padding: 0 10px;
+    padding-right: 0;
     color: #fff;
 }
 
 .service-right h3 {
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .service-right p {
     text-transform: uppercase;
     margin-top: 5px;
+}
+
+.service-box li img {
+    width: 200px;
 }
 
 .header-wraper {
@@ -130,7 +144,9 @@ img {
 }
 
 .header-area {
-    margin: 30px 0;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 0px 0px #d7d7d7;
 }
 
 /*======================== Menu Design ==================*/
@@ -223,18 +239,26 @@ img {
         header area end
     ================================ */
 
-.Product-title-area {
-    background-color: #001D44;
-}
-
 .pro-title {
-    background-color: #001D44;
-    border-radius: 5px;
-    padding: 30px 0;
+    padding: 15px 0;
     text-align: center;
 }
 
+.pro-title-red {
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .pro-title h3 {
+    color: #fff;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.pro-title-red h3 {
     color: #fff;
     font-size: 24px;
     display: inline-block;
@@ -278,11 +302,16 @@ img {
 .box-content {
     padding: 30px 30px 0;
     overflow: hidden;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
 }
 
 .pro-img {
     padding-bottom: 0;
     overflow: hidden;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    padding-bottom: 30px;
 }
 
 .product-img {
@@ -290,20 +319,9 @@ img {
     margin-top: 30px;
 }
 
-.pro-single-img {
-    height: 542px;
-    position: relative;
-}
-
 .pro-single-img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
     width: 100%;
-
+    border: 5px solid #000;
 }
 
 .warranty {
@@ -393,6 +411,53 @@ img {
 /*  ================================
         product area end
     ================================ */
+.feedback-info {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    border: 1px solid #eaeaea;
+}
+
+.feedback-area h3 {
+    background-color: #C3EDDD;
+    text-align: center;
+    padding: 13px 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fd-head {
+    background-color: #C3EDDD;
+    padding: 10px 0;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.fd-head p {
+    margin: 0;
+}
+
+#feedback_button {
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    background-color: #C92191;
+    margin: -11px 0px 0 0px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 0px 2px 2px 0px;
+    padding: 13px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    float: right;
+    position: relative;
+}
 
 /*  ================================
         footer area start
@@ -488,8 +553,12 @@ img {
 /***** medium Layout *****/
 
 @media (min-width: 992px) and (max-width: 1200px) {
+    .service-box li img {
+        width: 170px;
+    }
+
     .service-right h3 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .service-left i {
@@ -500,8 +569,24 @@ img {
 /***** Tablet Layout *****/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .service-box li img {
+        width: 130px;
+    }
+
     .service-right h3 {
-        font-size: 14px;
+        font-size: 10px;
+    }
+
+    .satisfacation {
+        margin: 20px 0;
+    }
+
+    .fd-head {
+        margin-top: 20px;
+    }
+
+    .pro-title-red h3 {
+        font-size: 20px;
     }
 
     .logo img {
@@ -527,7 +612,7 @@ img {
 
     .service-left i {
         padding: 8px 0;
-        font-size: 20px
+        font-size: 20px;
     }
 
     .service-right {
@@ -572,6 +657,15 @@ img {
         text-align: center;
     }
 
+    .fd-head {
+        margin-top: 20px;
+    }
+
+    .service-left i {
+        width: auto;
+        padding: 16px;
+    }
+
     .dis-heading {
         margin: 30px 0 0;
     }
@@ -584,6 +678,14 @@ img {
 
     .why-us {
         width: 100%;
+    }
+
+    .fd-head {
+        font-size: 16px;
+    }
+
+    #feedback_button {
+        padding: 12px 10px;
     }
 
     .why-us h3 {
@@ -787,4 +889,3 @@ img {
         text-align: center;
     }
 }
-
