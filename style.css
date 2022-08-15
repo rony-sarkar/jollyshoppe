@@ -38,7 +38,9 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-
+.mv {
+  display: none;       
+}
 .banner-area img {
     margin: 10px 0;
 }
